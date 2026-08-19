@@ -1,0 +1,35 @@
+# robots.txt — shistudio.ru
+# Поисковые системы
+User-agent: Googlebot
+Allow: /
+User-agent: YandexBot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# Поисковые агенты ИИ (retrieval — дают ссылки на источник)
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Обучающие краулеры — открыты сознательно, ради упоминаемости
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://shistudio.ru/sitemap.xml

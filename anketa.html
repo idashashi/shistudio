@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Анкета перед консультацией — Shi Studio</title>
+<meta name="description" content="Анкета, которую нужно заполнить перед консультацией. Информация конфиденциальна и используется для экспресс-анализа проекта.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://shistudio.ru/anketa.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080808;--ink:#fff;--dim:#8A8A8A;--faint:#5A5A5A;--line:#1C1C1C;--panel:#0D0D0D;--hl:#FFFFFF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:17px/1.5 "Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 28px}
+header{padding:30px 0 0}
+.logo{display:inline-block;text-decoration:none;color:#FFF}
+.wm{display:block;font-size:32px;line-height:.94;font-weight:700;letter-spacing:-.055em}
+.dsc{display:block;text-align:right;font-size:8.5px;line-height:1.28;font-weight:700;
+     letter-spacing:.14em;margin-top:2px;color:#FFF}
+
+h1{font-size:clamp(30px,5vw,44px);line-height:1.06;letter-spacing:-.032em;font-weight:680;margin:44px 0 16px}
+.lead{font-size:17.5px;color:var(--dim);margin-bottom:10px}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;
+      font-size:15px;color:var(--dim);margin:22px 0 34px}
+.note b{color:#fff;font-weight:620}
+form{padding-bottom:80px}
+.f{margin-bottom:30px}
+.f label{display:block;font-size:17px;font-weight:620;margin-bottom:5px}
+.f label .req{color:var(--hl);margin-left:3px}
+.f .hint{font-size:14.5px;color:var(--faint);line-height:1.5;margin-bottom:10px;white-space:pre-line}
+input[type=text],input[type=email],textarea{
+  width:100%;background:#0D0D0D;border:1px solid var(--line);border-radius:9px;color:#fff;
+  font:16px/1.5 inherit;padding:13px 15px;outline:none;transition:border-color .15s}
+input:focus,textarea:focus{border-color:var(--hl)}
+textarea{min-height:110px;resize:vertical}
+.opts{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt span{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:9px 17px;
+          font-size:15px;color:var(--dim);cursor:pointer;transition:.15s;user-select:none}
+.opt input:checked+span{border-color:#fff;background:#fff;color:#080808;font-weight:600}
+.opt input:focus-visible+span{outline:2px solid var(--hl);outline-offset:2px}
+.hp{position:absolute;left:-9999px}
+button{background:#fff;color:#080808;border:none;border-radius:9px;padding:16px 34px;
+       font:620 17px/1 inherit;cursor:pointer;transition:.15s}
+button:hover{background:#e2e2e2}
+.foot{color:var(--faint);font-size:14px;padding:26px 0 50px;border-top:1px solid var(--line);margin-top:20px}
+.foot a{color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="logo" href="index.html" aria-label="shistudio — commercial strategy">
+    <span class="wm">shistudio</span><span class="dsc">COMMERCIAL<br>STRATEGY</span>
+  </a>
+</header>
+
+<h1>Анкета перед консультацией</h1>
+<p class="lead">Заполните до нашего разговора — чтобы мы не тратили время на сбор фактов и сразу говорили по делу.</p>
+
+<div class="note">
+<b>Информация конфиденциальна</b> и используется только для экспресс-анализа вашего проекта. Чем подробнее ответы, тем глубже разбор на консультации. Если на какой-то вопрос ответа пока нет — так и напишите, это тоже информация.
+</div>
+
+<form name="anketa" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="spasibo.html">
+  <input type="hidden" name="form-name" value="anketa">
+  <p class="hp"><label>Не заполняйте: <input name="bot-field"></label></p>
+
+  <div class="f">
+    <label>Как называется ваша компания и бренд?<span class="req">*</span></label>
+    <input type="text" name="Компания и бренд" required>
+  </div>
+
+  <div class="f">
+    <label>Ваше имя<span class="req">*</span></label>
+    <input type="text" name="Имя" required>
+  </div>
+
+  <div class="f">
+    <label>Контакт для связи<span class="req">*</span></label>
+    <div class="hint">Телефон, телеграм или почта — как вам удобнее.</div>
+    <input type="text" name="Контакт" required>
+  </div>
+
+  <div class="f">
+    <label>Email</label>
+    <input type="email" name="Email">
+  </div>
+
+  <div class="f">
+    <label>Какие задачи вы хотите решить?<span class="req">*</span></label>
+    <div class="hint">Какую проблему хотите решить, какие задачи перед вами стоят, на какие вопросы хотите получить ответ.</div>
+    <textarea name="Задачи" required></textarea>
+  </div>
+
+  <div class="f">
+    <label>Какая ключевая метрика и цель проекта?<span class="req">*</span></label>
+    <div class="hint">Главный финансовый критерий успеха. Можно выбрать несколько.</div>
+    <div class="opts">
+      <label class="opt"><input type="checkbox" name="Ключевая метрика" value="выручка"><span>выручка</span></label>
+      <label class="opt"><input type="checkbox" name="Ключевая метрика" value="чистая прибыль"><span>чистая прибыль</span></label>
+      <label class="opt"><input type="checkbox" name="Ключевая метрика" value="количество клиентов"><span>количество клиентов</span></label>
+      <label class="opt"><input type="checkbox" name="Ключевая метрика" value="создание кейса / тестовый проект"><span>создание кейса</span></label>
+      <label class="opt"><input type="checkbox" name="Ключевая метрика" value="другое"><span>другое</span></label>
+    </div>
+  </div>
+
+  <div class="f">
+    <label>Маржинальность вашего проекта</label>
+    <div class="hint">Хотя бы порядок: сколько остаётся с продажи после прямых расходов.</div>
+    <input type="text" name="Маржинальность">
+  </div>
+
+  <div class="f">
+    <label>Какой бюджет вы запланировали?</label>
+    <div class="hint">Ваши ожидания по вложениям в задачу.</div>
+    <input type="text" name="Бюджет">
+  </div>
+
+  <div class="f">
+    <label>Срок начала работ по проекту</label>
+    <input type="text" name="Срок начала">
+  </div>
+
+  <div class="f">
+    <label>Соцсети и онлайн-каналы проекта</label>
+    <div class="hint">Сайт, инстаграм, телеграм-канал, личный телеграм, тикток, линкедин, другие.</div>
+    <textarea name="Каналы"></textarea>
+  </div>
+
+  <div class="f">
+    <label>Ссылки на материалы</label>
+    <div class="hint">Что готовы показать на этом этапе: презентации продукта, бренд-бук, юнит-экономика, финмодель, планы продаж, позиционирование, исследования рынка и CustDev, описание аудитории и сегментация базы.</div>
+    <textarea name="Материалы"></textarea>
+  </div>
+
+  <div class="f">
+    <label>Дополнительные комментарии и вопросы</label>
+    <textarea name="Комментарии"></textarea>
+  </div>
+
+  <button type="submit">Отправить анкету</button>
+</form>
+
+<div class="foot">
+  Shi Studio · <a href="https://t.me/idashashi">t.me/idashashi</a> · <a href="mailto:daria.shi@gmail.com">daria.shi@gmail.com</a><br>ИП Шибаева Дарья
+</div>
+
+</div>
+</body>
+</html>
