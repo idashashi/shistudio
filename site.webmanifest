@@ -1,11 +1,11 @@
 {
-  "name": "Shi Studio",
-  "short_name": "Shi Studio",
+  "name": "Space — коммерческая стратегия",
+  "short_name": "Space",
   "icons": [
-    { "src": "/icon-96.png", "sizes": "96x96", "type": "image/png" },
-    { "src": "/icon-180.png", "sizes": "180x180", "type": "image/png" }
+    {"src": "/icon-96.png", "sizes": "96x96", "type": "image/png"},
+    {"src": "/icon-180.png", "sizes": "180x180", "type": "image/png"}
   ],
-  "theme_color": "#080808",
-  "background_color": "#080808",
+  "theme_color": "#0D0E10",
+  "background_color": "#0D0E10",
   "display": "standalone"
 }
